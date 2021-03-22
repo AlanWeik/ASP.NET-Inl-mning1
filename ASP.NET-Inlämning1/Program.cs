@@ -6,6 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ASP.NET_Inlämning1.Models;
+
 
 namespace ASP.NET_Inlämning1
 {
