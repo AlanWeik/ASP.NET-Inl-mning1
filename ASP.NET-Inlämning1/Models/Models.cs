@@ -7,15 +7,14 @@ namespace ASP.NET_Inlämning1.Models
 {
     public class Attendee
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
         public int Phone_Number { get; set; }
     }
     public class Event
     {
-        public int ID { get; set; }
-        public int Organizer_ID { get; set; }
+        public int Id { get; set; }
         public string Description { get; set; }
         public string Place { get; set; }
         public DateTime Date { get; set; }
@@ -23,9 +22,10 @@ namespace ASP.NET_Inlämning1.Models
     }
     public class Organizer
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; } 
         public string Email { get; set; }
         public int Phone_Number { get; set; }
+        public List<Organizer> Organizers { get; set; }
     }
 }
