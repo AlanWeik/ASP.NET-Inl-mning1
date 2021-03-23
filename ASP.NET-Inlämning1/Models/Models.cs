@@ -28,5 +28,7 @@ namespace ASP.NET_Inlämning1.Models
         public string Name { get; set; } 
         public string Email { get; set; }
         public int Phone_Number { get; set; }
+        public List<Event> Events { get; set; }
+        public List<Attendee> Attendees { get; set; }
     }
 }
