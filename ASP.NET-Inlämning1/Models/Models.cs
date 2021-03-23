@@ -18,7 +18,7 @@ namespace ASP.NET_Inlämning1.Models
         public int Organizer_ID { get; set; }
         public string Description { get; set; }
         public string Place { get; set; }
-        public int /*DateTime*/ Date { get; set; }
+        public DateTime Date { get; set; }
         public int Spots_Available { get; set; }
     }
     public class Organizer
