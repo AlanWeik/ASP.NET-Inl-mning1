@@ -27,10 +27,12 @@ namespace ASP.NET_Inlämning1
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<EventDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DbContext")));
-        
             services.AddRazorPages();
+
+            services.AddDatabaseDeveloperPageExceptionFilter();
+
+            services.AddDbContext<EventDbContext>(options =>
+               options.UseSqlServer(Configuration.GetConnectionString("DbContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
