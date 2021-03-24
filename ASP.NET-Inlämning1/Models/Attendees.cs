@@ -13,3 +13,4 @@ namespace ASP.NET_Inlämning1.Models
         public int Phone_Number { get; set; }
         public virtual List<Event> Events { get; set; }
     }
+}

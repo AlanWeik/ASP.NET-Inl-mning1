@@ -17,8 +17,16 @@ namespace ASP.NET_Inlämning1.Data
         public DbSet<Models.Event> Events { get; set; }
         public DbSet<Models.Organizer> Organizers { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Attendee>().ToTable("Attendee");
+            modelBuilder.Entity<Event>().ToTable("Event");
+            modelBuilder.Entity<Organizer>().ToTable("Student");
+        }
+    }
+}
 
-        public void Seed()
+        /*public void Seed()
         {
             this.Attendees.RemoveRange(this.Attendees);
             this.Events.RemoveRange(this.Events);
@@ -53,4 +61,4 @@ namespace ASP.NET_Inlämning1.Data
             this.SaveChanges();
         }
     }
-}
+}*/
