@@ -32,7 +32,7 @@ namespace ASP.NET_Inlämning1
             services.AddDatabaseDeveloperPageExceptionFilter();
 
             services.AddDbContext<EventDbContext>(options =>
-               options.UseSqlServer(Configuration.GetConnectionString("DbContext")));
+               options.UseSqlServer(Configuration.GetConnectionString("EventDbContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
