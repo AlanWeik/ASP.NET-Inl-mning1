@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ASP.NET_Inlämning1.Data;
 using ASP.NET_Inlämning1.Models;
-using ASP.NET_Inlämning1.Pages;
 
 namespace ASP.NET_Inlämning1.Data
 {
